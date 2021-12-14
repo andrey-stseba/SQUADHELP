@@ -1,16 +1,16 @@
 {
   "development": {
     "username": "postgres",
-    "password": "password",
-    "database": "todo-dev",
-    "host": "db-dev",
+    "password": "1",
+    "database": "squadhelp-v0-dev",
+    "host": "localhost",
     "dialect": "postgres",
     "operatorsAliases": "Op"
   },
   "test": {
     "username": "postgres",
     "password": "admin",
-    "database": "todo-test",
+    "database": "squadhelp-v0-test",
     "host": "localhost",
     "dialect": "postgres",
     "operatorsAliases": "Op"
@@ -18,7 +18,7 @@
   "production": {
     "username": "postgres",
     "password": "admin",
-    "database": "todo-prod",
+    "database": "squadhelp-v0-prod",
     "host": "localhost",
     "dialect": "postgres",
     "operatorsAliases": "Op"
