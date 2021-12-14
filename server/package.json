@@ -3,7 +3,7 @@
   "version": "0.0.0",
   "private": true,
   "scripts": {
-    "start": "nodemon --exec babel-node ./src/index.js",
+    "start-dev": "nodemon ./server.js",
     "test": "jest"
   },
   "dependencies": {
