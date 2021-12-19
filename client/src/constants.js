@@ -3,7 +3,8 @@ const serverIP = 'localhost';
 const serverPort = 5000;
 export default {
   CONTACTS: {
-    TEL: '(877)355-3585'
+    CODE_OPERATOR: '877',
+    TEL: '3553585'
   },
   CUSTOMER: 'customer',
   CREATOR: 'creator',

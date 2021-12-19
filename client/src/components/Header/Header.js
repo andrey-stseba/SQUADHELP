@@ -3,12 +3,9 @@ import { connect } from 'react-redux';
 import { Link, withRouter } from 'react-router-dom';
 import styles from './Header.module.sass';
 import CONSTANTS from '../../constants';
-import {
-  getUserAction,
-  clearUserStore,
-  headerRequest
-} from '../../actions/actionCreator';
+import { clearUserStore, headerRequest } from '../../actions/actionCreator';
 import Logo from '../Logo';
+import Telefon from '../Telefon';
 
 class Header extends React.Component {
   componentDidMount () {
@@ -112,16 +109,10 @@ class Header extends React.Component {
         </div>
         <div className={styles.loginSignnUpHeaders}>
           <div className={styles.numberContainer}>
-            <a
-              style={{ textDecoration: 'none' }}
-              href={`tel:${CONSTANTS.CONTACTS.TEL}`}
-            >
-              <img
-                src={`${CONSTANTS.STATIC_IMAGES_PATH}phone.png`}
-                alt='phone'
-              />
-              <span>{CONSTANTS.CONTACTS.TEL}</span>
-            </a>
+            <Telefon
+              src={`${CONSTANTS.STATIC_IMAGES_PATH}phone.png`}
+              alt='phone'
+            />
           </div>
           <div className={styles.userButtonsContainer}>
             {this.renderLoginButtons()}
