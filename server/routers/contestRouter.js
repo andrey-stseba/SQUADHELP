@@ -39,4 +39,25 @@ contestRouter.post(
   contestController.updateContest
 );
 
+contestRouter.get(
+  '/downloadFile/:fileName',
+  checkToken.checkToken,
+  contestController.downloadFile
+);
+
+contestRouter.post(
+  '/setNewOffer',
+  checkToken.checkToken,
+  upload.uploadLogoFiles,
+  basicMiddlewares.canSendOffer,
+  contestController.setNewOffer
+);
+
+contestRouter.post(
+  '/setOfferStatus',
+  checkToken.checkToken,
+  basicMiddlewares.onlyForCustomerWhoCreateContest,
+  contestController.setOfferStatus
+);
+
 module.exports = contestRouter;

@@ -35,6 +35,7 @@ export const getActiveContests = data =>
 export const getContestById = ({ contestId }) =>
   http.get(`contests/${contestId}`);
 export const downloadContestFile = data =>
-  http.get(`downloadFile/${data.fileName}`);
-export const setNewOffer = data => http.post('setNewOffer', data);
-export const setOfferStatus = data => http.post('setOfferStatus', data);
+  http.get(`contests/downloadFile/${data.fileName}`);
+export const setNewOffer = data => http.post('contests/setNewOffer', data);
+export const setOfferStatus = data =>
+  http.post('contests/setOfferStatus', data);
