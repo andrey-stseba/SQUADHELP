@@ -260,7 +260,7 @@ module.exports.setOfferStatus = async (req, res, next) => {
 
 module.exports.getCustomersContests = (req, res, next) => {
   const {
-    query: { limit, offset, contestStatus:status },
+    query: { limit, offset, contestStatus: status },
     tokenData: { userId }
   } = req;
   db.Contests.findAll({
@@ -280,6 +280,7 @@ module.exports.getCustomersContests = (req, res, next) => {
       contests.forEach(
         contest => (contest.dataValues.count = contest.dataValues.Offers.length)
       );
+
       let haveMore = true;
       if (contests.length === 0) {
         haveMore = false;

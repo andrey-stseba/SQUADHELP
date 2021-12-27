@@ -29,6 +29,7 @@ contestRouter.get(
   '/',
   checkToken.checkToken,
   basicMiddlewares.onlyForCreative,
+  basicMiddlewares.parseQueryStrings,
   contestController.getContests
 );
 

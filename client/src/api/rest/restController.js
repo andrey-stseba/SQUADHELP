@@ -31,7 +31,7 @@ export const dataForContest = data =>
 export const getCustomersContests = data =>
   http.get(`contests/customers?${queryStrig.stringify(data)}`);
 export const getActiveContests = data =>
-  http.get(`/contests?${queryStrig.stringify(data)}`);
+  http.get(`contests?${queryStrig.stringify(data)}`);
 export const getContestById = ({ contestId }) =>
   http.get(`contests/${contestId}`);
 export const downloadContestFile = data =>
