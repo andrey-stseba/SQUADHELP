@@ -3,16 +3,26 @@ import classNames from 'classnames';
 import { useField } from 'formik';
 
 const ImageUpload = props => {
-  const [field, meta, helpers] = useField(props);
+  const [field, meta, helpers] = useField(props.name);
   const { setValue } = helpers;
-  const { uploadContainer, inputContainer, imgStyle } = props.classes;
+
+  const {
+    uploadContainer,
+    inputContainer,
+    imgStyle,
+    textStyle
+  } = props.classes;
   const onChange = e => {
     const node = window.document.getElementById('imagePreview');
     const file = e.target.files[0];
-    const imageType = /image.*/;
+    const imageType = /image\/png|jpeg|gif|jpg/;
+    const messageError = window.document.getElementById('messageError');
+
     if (!file.type.match(imageType)) {
       e.target.value = '';
+      messageError.textContent = 'Error of loading! Please, add only images.';
     } else {
+      messageError.textContent = '';
       const reader = new FileReader();
       reader.onload = () => {
         node.src = reader.result;
@@ -33,7 +43,9 @@ const ImageUpload = props => {
           accept='.jpg, .png, .jpeg'
           onChange={onChange}
         />
+
         <label htmlFor='fileInput'>Chose file</label>
+        <span id='messageError' className={textStyle}></span>
       </div>
       <img
         id='imagePreview'

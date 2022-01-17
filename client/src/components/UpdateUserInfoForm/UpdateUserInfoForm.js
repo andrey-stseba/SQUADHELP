@@ -10,6 +10,7 @@ import Error from '../Error/Error';
 
 const UpdateUserInfoForm = props => {
   const { onSubmit, submitting, error, clearUserError } = props;
+
   return (
     <Formik
       onSubmit={onSubmit}
@@ -72,7 +73,8 @@ const UpdateUserInfoForm = props => {
           classes={{
             uploadContainer: styles.imageUploadContainer,
             inputContainer: styles.uploadInputContainer,
-            imgStyle: styles.imgStyle
+            imgStyle: styles.imgStyle,
+            textStyle: styles.textStyle
           }}
         />
         <button type='submit' disabled={submitting}>
