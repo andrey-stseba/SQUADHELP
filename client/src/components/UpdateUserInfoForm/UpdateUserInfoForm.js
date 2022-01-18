@@ -10,7 +10,6 @@ import Error from '../Error/Error';
 
 const UpdateUserInfoForm = props => {
   const { onSubmit, submitting, error, clearUserError } = props;
-
   return (
     <Formik
       onSubmit={onSubmit}
