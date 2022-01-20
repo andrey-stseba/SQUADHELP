@@ -22,6 +22,16 @@
       align-items: center
       justify-content: space-between
 
+      i
+        font-size: 36px
+        color: #4e618d
+        transition: font-size 0.2s
+
+        &:hover
+          font-size: 44px
+          transition: font-size 0.2s
+
+
       .editBtn
         margin-right: 15px
         color: white
@@ -60,39 +70,8 @@
 
       .file
         align-self: stretch
-        text-decoration: underline
+        text-decoration: none
 
         &:hover
           color: #6b89b0
 
-.dataContainer
-  align-self: stretch
-  display: flex
-  flex-direction: column
-  justify-content: flex-start
-  align-items: flex-start
-
-  .data
-    color: #515b5f
-    font-size: 15px
-    padding: 0
-    padding-top: 8px
-    margin-bottom: 10px
-    border: none
-    background-color: white
-    resize: none
-    align-self: stretch
-    overflow: visible
-    overflow-wrap: break-word
-
-  .label
-    font-size: 16px
-    font-weight: 700
-    margin: 10px 0
-
-  .file
-    align-self: stretch
-    text-decoration: underline
-
-    &:hover
-      color: #6b89b0
