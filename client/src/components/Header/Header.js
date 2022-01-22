@@ -168,25 +168,25 @@ class Header extends React.Component {
                   />
                   <ul>
                     <li>
-                      <a href='http://www.google.com'>HOW IT WORKS</a>
+                      <Link to='/howItWorks'>HOW IT WORKS</Link>
                     </li>
                     <li>
-                      <a href='http://www.google.com'>PRICING</a>
+                      <a href='#'>PRICING</a>
                     </li>
                     <li>
-                      <a href='http://www.google.com'>AGENCY SERVICE</a>
+                      <a href='#'>AGENCY SERVICE</a>
                     </li>
                     <li>
-                      <a href='http://www.google.com'>ACTIVE CONTESTS</a>
+                      <a href='#'>ACTIVE CONTESTS</a>
                     </li>
                     <li>
-                      <a href='http://www.google.com'>WINNERS</a>
+                      <a href='#'>WINNERS</a>
                     </li>
                     <li>
-                      <a href='http://www.google.com'>LEADERBOARD</a>
+                      <a href='#'>LEADERBOARD</a>
                     </li>
                     <li className={styles.last}>
-                      <a href='http://www.google.com'>BECOME A CREATIVE</a>
+                      <a href='#'>BECOME A CREATIVE</a>
                     </li>
                   </ul>
                 </li>
