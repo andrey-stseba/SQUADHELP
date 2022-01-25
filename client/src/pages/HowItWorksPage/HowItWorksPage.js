@@ -4,6 +4,7 @@ import Footer from '../../components/Footer/Footer';
 import styles from './HowItWorksPage.module.sass';
 import SquadhelpWorkSection from '../../components/SquadhelpWorkSection/SquadhelpWorkSection';
 import WaysUseSquadhelpSection from '../../components/WaysUseSquadhelpSection/WaysUseSquadhelpSection';
+import SatisfactionSection from '../../components/SatisfactionSection/SatisfactionSection';
 function HowItWorksPage () {
   return (
     <>
@@ -11,6 +12,7 @@ function HowItWorksPage () {
       <div className={styles.mainContainer}>
         <SquadhelpWorkSection />
         <WaysUseSquadhelpSection />
+        <SatisfactionSection />
       </div>
       <Footer />
     </>

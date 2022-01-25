@@ -1,0 +1,86 @@
+@import './../../common/styles/_templates'
+
+.satisfactionSection
+  @include flex-box
+  max-width: $xl
+  width: 100%
+  padding: 35px 15px
+  margin: 0 70px
+  @media (max-width: $sm)
+        flex-wrap: wrap
+  .containerPayFraction
+  background-color: #fff
+  p 
+   color: $text-page-color
+   line-height: 1.5
+  ul
+   padding: 64px
+   margin: 0
+  &>li 
+    list-style-type: none
+  h4 
+    margin: 0 0 10px
+    font-size: 22px
+    font-weight: 500
+
+
+
+.listItemPayFraction
+  @include flex-box(normal,normal,row)
+  
+.icon
+  @include flex-box(center)
+  margin-right: 16px
+  &>i 
+    border-radius: 50% !important
+    background-color: rgba(55, 125, 255, 0.1)
+    color: $page-color
+    width: 2rem
+    height: 2rem
+    object-fit: cover
+    @include flex-box(center,center)
+   
+
+.listItemBorderTop
+  margin: 16px 0
+  border-top: 1px solid #e7eaf3 !important
+
+
+.containerQuestions
+  color: #fff
+  background-color: $page-color
+  ul
+    padding: 64px
+    margin: 0
+
+.listItemQuestions
+  @include flex-box(normal,normal,column)
+  &>p
+    margin: 15px 0px
+    line-height: 1.5
+    color: #fff
+
+  &>a  
+    margin-top: 15px
+  &>span
+    margin-top: 15px
+
+  h4 
+    margin: 0 0 10px
+    font-size: 26px
+    font-weight: 500
+  img
+      margin-right: 15px
+
+
+.btnConsultion
+  background: white
+  color: $page-color
+  border-radius: 50px
+  border: none
+  width: 214px
+  height: 50px
+  cursor: pointer
+  transition: all 0.2s
+  &:hover
+    transform: translateY(-5px)      
