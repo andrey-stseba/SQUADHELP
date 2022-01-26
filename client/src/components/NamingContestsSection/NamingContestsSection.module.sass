@@ -1,0 +1,93 @@
+@import './../../common/styles/_templates'
+.namingContestsSection
+  @include flex-box(center, center, column)
+  max-width: 100%
+  padding: 128px 15px
+  margin: 0 auto
+  border-top: 1px solid lightgrey  
+
+
+.headerContainer
+  @include flex-box(center, center, column)
+  margin-bottom: 64px
+  h2
+    color: #1e2022
+    margin: 16px 0px
+    line-height: 1.5
+    font-size: 32px
+    font-weight: 400
+    text-align: center
+  img
+    width: 72px
+
+.listContainer
+  @include flex-box(space-between, center, row-reverse)
+  @media (max-width: $lg)
+    flex-direction: column
+
+.listItems
+  @include flex-box(space-between, flex-start, column)
+  width: 40%
+  height: 775px
+  @media (max-width: $lg)
+    width: 95%
+    height: auto
+  li
+    @include flex-box(normal, center)
+    position: relative
+    width: 100%
+    border: 1px solid lightgrey
+    border-radius: 5px
+    padding: 32px
+    @media (max-width: $lg)
+      margin: 10px
+      padding: 16px
+    &::before
+      position: absolute
+      top: 0
+      bottom: 0
+      right: 0
+      left: -40px
+      width: 32px
+      height: 1px
+      margin: auto auto auto 0
+      border-top: 1px solid lightgrey
+      content: ""
+    &::after
+      position: absolute
+      top: 0
+      bottom: 0
+      right: 0
+      left: -42px
+      width: 1px
+      height: 200%
+      margin: auto auto auto 0
+      border-right: 1px solid lightgrey
+      content: ""
+    &:first-child::after
+      top: auto
+      height: 50%
+    &:last-child::after
+      bottom: auto
+      height: 50%
+    span
+      font-size: 56px
+      line-height: 1.2
+      color: $page-color
+      font-weight: 500
+      margin-right: 16px
+    p
+      margin: auto 0
+      font-weight: 400
+      text-align: left
+      color: #77838f
+      line-height: 1.7
+
+.imageContainer
+  width: 50%
+  padding-right: 48px
+  @media (max-width: $lg)
+    width: 95%
+    padding: 0px
+  img
+    width: 100%

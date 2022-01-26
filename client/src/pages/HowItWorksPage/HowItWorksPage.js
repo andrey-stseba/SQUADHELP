@@ -5,6 +5,8 @@ import styles from './HowItWorksPage.module.sass';
 import SquadhelpWorkSection from '../../components/SquadhelpWorkSection/SquadhelpWorkSection';
 import WaysUseSquadhelpSection from '../../components/WaysUseSquadhelpSection/WaysUseSquadhelpSection';
 import SatisfactionSection from '../../components/SatisfactionSection/SatisfactionSection';
+import NamingContestsSection from '../../components/NamingContestsSection/NamingContestsSection';
+import FeaturedSection from '../../components/FeaturedSection/FeaturedSection';
 function HowItWorksPage () {
   return (
     <>
@@ -12,7 +14,9 @@ function HowItWorksPage () {
       <div className={styles.mainContainer}>
         <SquadhelpWorkSection />
         <WaysUseSquadhelpSection />
+        <NamingContestsSection />
         <SatisfactionSection />
+        <FeaturedSection />
       </div>
       <Footer />
     </>
