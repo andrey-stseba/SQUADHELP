@@ -1,0 +1,35 @@
+@import './../../common/styles/_templates'
+.featuredSection
+    @include flex-box
+    margin-bottom: 1.5rem
+    padding: 0 auto
+    max-width: 95%
+    @media (max-width: $md)
+        flex-direction: column
+    h6
+        height: 74px
+        width: 30%
+        margin-bottom: 8px
+        padding: 32px 0px 0px 24px
+        color: #1e2022
+        line-height: 1.5
+        letter-spacing: 1px
+        font-size: 28px
+        font-weight: 400
+        text-align: center
+        @media (max-width: $md)
+            text-align: left
+            width: 100%
+    .clientsBox
+        @include flex-box (center,center,row,wrap)
+        width: 70%
+        border-top: 1px solid lightgrey
+        padding-top: 32px
+        @media (max-width: $md)
+            width: 100%
+
+    .clientItem
+        margin: 0 8px 24px
+        padding: 0 15px
+    img 
+        width: 96px
