@@ -7,6 +7,7 @@ import WaysUseSquadhelpSection from '../../components/WaysUseSquadhelpSection/Wa
 import SatisfactionSection from '../../components/SatisfactionSection/SatisfactionSection';
 import NamingContestsSection from '../../components/NamingContestsSection/NamingContestsSection';
 import FeaturedSection from '../../components/FeaturedSection/FeaturedSection';
+import StatsSection from '../../components/StatsSection/StatsSection';
 function HowItWorksPage () {
   return (
     <>
@@ -15,6 +16,7 @@ function HowItWorksPage () {
         <SquadhelpWorkSection />
         <WaysUseSquadhelpSection />
         <NamingContestsSection />
+        <StatsSection />
         <SatisfactionSection />
         <FeaturedSection />
       </div>

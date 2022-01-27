@@ -1,0 +1,47 @@
+@import './../../common/styles/_templates'
+
+.sectionContainer
+  @include flex-box(center,center)
+  width: 100%
+  padding: 32px 15px
+  @media (max-width: $md)
+      flex-direction: column
+.boxCard
+  @include flex-box(center,center,column)
+  max-width: 300px
+  text-align: center
+  padding: 0 48px
+  margin-bottom: 15px
+  position: relative
+  &::before
+    position: absolute
+    content: ""
+    top: 30px
+    right: 0
+    width: 0
+    height: 70px
+    border-right: 1.5px solid #77838f
+    transform: rotate(10deg)
+   
+  &:last-child::before
+      border: none
+  @media (max-width: $md)
+      &::before
+          border: none
+  img
+    width: 72px
+  &:nth-child(2)>img
+    width: 80px
+  p
+    color: #77838f
+    line-height: 1.7
+    margin: 12px 0
+    span 
+        color: #1e2022
+        font-weight: 600!important
+
+  @media( max-width:  $md)
+      max-width: 80%
+      
+
+
