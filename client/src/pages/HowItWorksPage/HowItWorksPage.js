@@ -8,6 +8,7 @@ import SatisfactionSection from '../../components/SatisfactionSection/Satisfacti
 import NamingContestsSection from '../../components/NamingContestsSection/NamingContestsSection';
 import FeaturedSection from '../../components/FeaturedSection/FeaturedSection';
 import StatsSection from '../../components/StatsSection/StatsSection';
+import CTASection from '../../components/CTASection/CTASection';
 function HowItWorksPage () {
   return (
     <>
@@ -16,6 +17,7 @@ function HowItWorksPage () {
         <SquadhelpWorkSection />
         <WaysUseSquadhelpSection />
         <NamingContestsSection />
+        <CTASection />
         <StatsSection />
         <SatisfactionSection />
         <FeaturedSection />
