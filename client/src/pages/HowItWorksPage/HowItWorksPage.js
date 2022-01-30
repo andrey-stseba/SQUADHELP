@@ -9,6 +9,7 @@ import NamingContestsSection from '../../components/NamingContestsSection/Naming
 import FeaturedSection from '../../components/FeaturedSection/FeaturedSection';
 import StatsSection from '../../components/StatsSection/StatsSection';
 import CTASection from '../../components/CTASection/CTASection';
+import BasicsAccordionSection from '../../components/BasicsAccordionSection/BasicsAccordionSection';
 function HowItWorksPage () {
   return (
     <>
@@ -16,7 +17,10 @@ function HowItWorksPage () {
       <div className={styles.mainContainer}>
         <SquadhelpWorkSection />
         <WaysUseSquadhelpSection />
+        <hr />
         <NamingContestsSection />
+        <hr />
+        <BasicsAccordionSection />
         <CTASection />
         <StatsSection />
         <SatisfactionSection />
