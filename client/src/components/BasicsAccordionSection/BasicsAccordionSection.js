@@ -1,9 +1,12 @@
 import React from 'react';
 import AccordionList from './AccordionList';
-import contests from './accordionData/contests.json';
-import marketplace from './accordionData/marketplace.json';
-import managed from './accordionData/managed.json';
-import creatives from './accordionData/creatives.json';
+import {
+  contests,
+  marketplace,
+  managed,
+  creatives
+} from './accordionData/index';
+
 import styles from './BasicsAccordionSection.module.sass';
 
 function BasicsAccordionSection () {
