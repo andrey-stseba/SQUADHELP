@@ -1,12 +1,6 @@
 import React from 'react';
 import AccordionList from './AccordionList';
-import {
-  contests,
-  marketplace,
-  managed,
-  creatives
-} from './accordionData/index';
-
+import CONSTANTS from './../../constants';
 import styles from './BasicsAccordionSection.module.sass';
 
 function BasicsAccordionSection () {
@@ -31,16 +25,24 @@ function BasicsAccordionSection () {
       <div className={styles.accordionLists}>
         <AccordionList
           id='contests'
-          data={contests}
+          data={CONSTANTS.contestsData}
           header='Launching A Contest'
         />
         <AccordionList
           id='marketplace'
-          data={marketplace}
+          data={CONSTANTS.marketplaceData}
           header='Buying From Marketplace'
         />
-        <AccordionList id='managed' data={managed} header='Managed Contests' />
-        <AccordionList id='creatives' data={creatives} header='For Creatives' />
+        <AccordionList
+          id='managed'
+          data={CONSTANTS.managedData}
+          header='Managed Contests'
+        />
+        <AccordionList
+          id='creatives'
+          data={CONSTANTS.creativesData}
+          header='For Creatives'
+        />
       </div>
     </div>
   );
