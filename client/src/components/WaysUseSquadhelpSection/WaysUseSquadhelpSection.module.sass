@@ -1,0 +1,90 @@
+@import './../../common/styles/_templates'
+
+.sectionContainer
+    @include flex-box(center,center,column)
+    max-width: $xl
+    width: 95%
+    margin: 32px auto
+    .infoSection
+        @include flex-box(center,center,column)
+        h2
+            color: #1e2022
+            margin: 16px 0px
+            line-height: 1.5
+            font-size: 32px
+            font-weight: 400
+            text-align: center 
+            
+        span
+            color: $page-color
+            background-color: $lightgrey-backgraund
+            text-align: center
+            margin-bottom: 8px
+            font-size: 12px
+            font-weight: 400
+            padding: 10px 15px
+            border-radius: 12px
+        p
+            font-weight: 400
+            text-align: center
+            margin: 0 0 16px
+            color: $text-page-color
+            line-height: 1.7
+        
+
+.cardsContainer
+    @include flex-box(space-between, stretch)
+    width: 100%
+    @media (max-width: $md)
+        flex-direction: column
+
+.cardBox
+  @include flex-box(flex-start, center, column)
+  border: 1px solid lightgrey
+  border-radius: 5px
+  padding: 64px 16px
+  flex: 1
+  max-width: 28%
+  @media (max-width: $md)
+    max-width: 100%
+    margin-bottom: 16px
+  img
+    width: 72px
+  h3
+    color: #1e2022
+    text-align: center
+    margin: 8px 0px
+    line-height: 1.5
+    font-size: 24px
+    font-weight: 500
+  p
+    
+    font-weight: 400
+    text-align: center
+    margin: 0 0 16px
+    color: $text-page-color
+    line-height: 1.7
+  a
+    font-weight: 500
+    text-align: center
+    padding: 12px 16px
+    font-size: 16px
+    line-height: 1.5
+    color: #fff
+    margin-top: 8px
+    min-width: 160px
+    background: $page-color
+    text-decoration: none
+    border-radius: 5px
+    &:hover
+        box-shadow: 0px 10px 4px #EAF2FF
+        transform: translateY(-4px)
+        transition: all 0.2s
+    
+
+
+
+        
+     
+
+        

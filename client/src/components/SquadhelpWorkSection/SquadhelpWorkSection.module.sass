@@ -1,0 +1,61 @@
+@import './../../common/styles/_templates'
+
+.SquadhelpWorkSection
+    @include flex-box(space-between, center)
+    max-width: $xl
+    width: 92%
+    margin: 0 auto
+    .textContainer
+        @include flex-box(center, flex-start, column)
+        width: 50%
+        margin: 50px 0
+        @media (max-width: $lg)
+            width: 100%
+        h1 
+            color: #1e2022
+            margin: 0px 0px 8px
+            line-height: 1.5
+            font-size: 40px
+            font-weight: 600
+        p
+            font-weight: 400
+            margin: 0 0 16px
+            color: $text-page-color
+            line-height: 1.7
+        span
+            color: $page-color
+            background-color: $lightgrey-backgraund
+            text-align: center
+            margin-bottom: 8px
+            font-size: 12px
+            font-weight: 400
+            padding: 10px 15px
+            border-radius: 12px
+        a
+            font-weight: 500
+            text-align: center
+            padding: 12px 10px
+            font-size: 16px
+            line-height: 1.5
+            color: #fff
+            margin-top: 8px
+            min-width: 160px
+            background: $page-color
+            text-decoration: none
+            border-radius: 30px
+            i
+                margin-right: 5px
+            &:hover
+                box-shadow: 0px 10px 4px #EAF2FF
+                transform: translateY(-4px)
+                transition: all 0.2s
+            
+
+   
+    .imageContainer
+        margin: 50px 0
+        width: 50%
+        img
+            width: 100%
+        @media (max-width: $lg)
+            display: none

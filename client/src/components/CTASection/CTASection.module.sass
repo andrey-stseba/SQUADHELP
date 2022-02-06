@@ -1,0 +1,73 @@
+@import './../../common/styles/_templates'
+
+.sectionContainer
+    @include flex-box(normal,center,column)
+    position: relative
+    background-image: linear-gradient(150deg, #2d1582 0%, #19a0ff 100%)
+    background-repeat: repeat-x
+    overflow: hidden!important
+    padding: 2rem 15px
+    margin: 0 auto
+    
+    .leftImage,.rightImage
+        position: absolute
+        width: 208px
+        height: 150px
+    
+    .leftImage
+        top: 0
+        left: 0
+    .rightImage
+        bottom: 0
+        right: 0
+    h3,p,a
+        z-index: 22
+    h3
+        color: #00dffc!important
+        font-weight: 600
+        font-size: 2rem
+        line-height: 1.5
+        margin-bottom: 8px
+    p
+        color: #fff
+        margin-bottom: 1rem
+        font-size: 1.25rem
+        font-weight: 300
+        margin-bottom: 16px
+        text-align: center
+
+
+    .startContestBtn
+        color: #1e2022
+        background-color: #fff
+        border-radius: 0.3125rem
+        min-width: 9.6875rem
+        padding: 0.75rem 1rem
+        margin-bottom: 10px
+        text-align: center
+        vertical-align: middle
+        text-decoration: none
+        line-height: 1.5
+        font-weight: 500
+        font-size: 1rem
+        cursor: pointer
+        border: 1px solid transparent
+        &:hover
+            box-shadow: 0 4px 11px rgb(250, 240, 240)
+            transition: all 0.2s
+            transform: translateY(-3px)
+            
+        
+        @media ( max-width: $sm)
+            width: 100%
+            margin: 0 0 15px         
+
+            
+
+        
+
+
+    
+
+
+    
