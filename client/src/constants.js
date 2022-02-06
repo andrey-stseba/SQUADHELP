@@ -80,5 +80,22 @@ export default {
       title: 'LEGAL',
       items: ['Terms of Service', 'Privacy Policy', 'Cookie Policy']
     }
+  ],
+  BUTTON_GROUP_ITEMS: [
+    {
+      describe: 'The Domain should exactly match the name',
+      header: 'Yes',
+      isSelected: false
+    },
+    {
+      describe: 'But minor variations are allowed (Recommended)',
+      header: 'Yes',
+      isSelected: true
+    },
+    {
+      describe: 'I am only looking for a name, not a Domain',
+      header: 'No',
+      isSelected: false
+    }
   ]
 };
