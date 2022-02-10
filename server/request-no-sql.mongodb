@@ -1,0 +1,4 @@
+// необходимо найти и посчитать, сколько записей в коллекции Messages содержат слово "паровоз"
+
+use('squadhelp-chat');
+db.messages.aggregate([{$match:{body:'паровоз'}},{$count:'В Messages количество слов паровоз'}]);
